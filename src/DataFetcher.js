@@ -8,7 +8,7 @@ const PostFetcher = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch('http://blogapiserver.pythonanywhere.com/api/posts/')
+    fetch('https://blogapiserver.pythonanywhere.com/api/posts/')
       .then(response => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
